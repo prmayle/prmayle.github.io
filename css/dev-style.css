@@ -1,0 +1,112 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #1b2637;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+nav .menu_holder {
+  background-color: #1b2637;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav .menu_holder .logo_section {
+  width: 200px;
+  height: auto;
+}
+
+nav .menu_holder .logo_section img {
+  width: 100%;
+  height: 100%;
+}
+
+nav .menu_holder ul.menu_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  list-style: none;
+  margin: 0px;
+}
+
+nav .menu_holder ul.menu_items li {
+  margin-right: 20px;
+}
+
+nav .menu_holder ul.menu_items li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: .87px;
+  line-height: 15px;
+}
+
+.main_section_banner {
+  background-image: url("../images/cleanbackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px 0px;
+}
+
+.main_section_banner .content_holder {
+  width: 600px;
+}
+
+.main_section_banner .content_holder .main_title {
+  color: white;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.main_section_banner .content_holder .main_description {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: .85px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.main_section_banner .content_holder .main_button {
+  display: block;
+  text-align: center;
+  width: 200px;
+  height: 45px;
+  border: 1px solid #BE9062;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+}
+/*# sourceMappingURL=dev-style.css.map */
