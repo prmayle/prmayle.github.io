@@ -6,9 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://kit.fontawesome.com/21355c039c.css" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/dev-style.css" />
     <title>LAND</title>
 </head>
+
+<div class="perload">
+    <img src="./images/landlogo.png" alt="">
+</div>
 
 <body>
     <nav>
@@ -16,22 +23,22 @@
             <div class="container">
                 <div class="row">
                     <div class="menu_holder">
-                        <div class="logo_section">
+                        <div class="logo_section" data-aos="fade-right" data-aos-delay="1000" data-aos-once="true">
                             <a href="javascript:;">
                                 <img src="./images/landlogo.png" alt="" class="logo" />
                             </a>
                         </div>
                         <ul class="menu_items">
-                            <li>
+                            <li data-aos="fade-down" data-aos-delay="1100" data-aos-once="true">
                                 <a href="javascript:;">About us</a>
                             </li>
-                            <li>
+                            <li data-aos="fade-down" data-aos-delay="1200" data-aos-once="true">
                                 <a href="javascript:;">Services</a>
                             </li>
-                            <li>
+                            <li data-aos="fade-down" data-aos-delay="1300" data-aos-once="true">
                                 <a href="javascript:;">Gallery</a>
                             </li>
-                            <li>
+                            <li data-aos="fade-down" data-aos-delay="1400" data-aos-once="true">
                                 <a href="javascript:;">Contact us</a>
                             </li>
                         </ul>
@@ -64,22 +71,125 @@
             <div class="container">
                 <div class="row">
                     <div class="content_holder">
-                        <h2 class="main_title">Lebanese organisation</h2>
-                        <h6 class="main_description">
+                        <h2 class="main_title" data-aos="fade-right" data-aos-delay="1000" data-aos-once="true">Lebanese organisation</h2>
+                        <h6 class="main_description" data-aos="fade-right" data-aos-delay="1200" data-aos-once="true">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore eos totam quaerat fuga? Maxime obcaecati odio culpa? Distinctio omnis quidem repudiandae a dolore ipsum rem rerum repellat libero, commodi odit deserunt temporibus? Veritatis ad reiciendis
                             cum.
                         </h6>
-                        <a href="javascript:;" class="main_button">Learn More</a>
+                        <a href="javascript:;" class="main_button" data-aos="fade-right" data-aos-delay="1400" data-aos-once="true">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cards_section">
+            <div class="container">
+                <div class="row">
+                    <div class="swiper firstSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content_swiper">
+                                    <div class="left_side" data-aos="fade-right">
+                                        <h1 class="title">Lorem, ipsum dolor.</h1>
+                                        <h6 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate pariatur accusantium!</h6>
+                                    </div>
+                                    <div class="right_side" data-aos="fade-left"><img src="./images/service1.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content_swiper">
+                                    <div class="left_side" data-aos="fade-right">
+                                        <h1 class="title">Lorem, ipsum dolor.</h1>
+                                        <h6 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate pariatur accusantium!</h6>
+                                    </div>
+                                    <div class="right_side" data-aos="fade-left"><img src="./images/service2.jpg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="content_swiper">
+                                    <div class="left_side" data-aos="fade-right">
+                                        <h1 class="title">Lorem, ipsum dolor.</h1>
+                                        <h6 class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cupiditate pariatur accusantium!</h6>
+                                    </div>
+                                    <div class="right_side" data-aos="fade-left"><img src="./images/service3.jpg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div thumbsSlider="" class="swiper secondSwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img src="./images/service1.jpg" alt="" data-aos="fade-up" data-aos-duration="700"></div>
+                            <div class="swiper-slide"> <img src="./images/service2.jpg" alt="" data-aos="fade-up" data-aos-delay="200" data-aos-duration="700"></div>
+                            <div class="swiper-slide"> <img src="./images/service3.jpg" alt="" data-aos="fade-up" data-aos-delay="400" data-aos-duration="700"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about_section_holder">
+            <div class="container">
+                <div class="row">
+                    <div class="about_section">
+                        <div class="left">
+                            <h1 class="about_title" data-aos="fade-right">About us</h1>
+                            <h6 class="about_description" data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia neque molestias ex sapiente! Repudiandae voluptatibus quod explicabo molestiae magnam aperiam voluptates odit optio esse eligendi, error sint natus cum quis
+                                nihil veritatis iure tempora mollitia deserunt praesentium. Ducimus, voluptatum consectetur!</h6>
+                            <a href="javascript:;" class="about_button" data-aos="fade-right">Learn More</a>
+                        </div>
+                        <div class="right">
+                            <img src="./images/aboutus.jpg" alt="" data-aos="fade-left">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 </body>
-<footer></footer>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="logo_holder">
+                    <a href="javascript:;"><img src="./images/landlogo.png" alt=""></a>
 
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+                </div>
+            </div>
+            <div class="col-md-4 col-12">
+                <ul class="site_map">
+                    <li><a href="javascript:;">Home</a></li>
+                    <li><a href="javascript:;">About us</a></li>
+                    <li><a href="javascript:;">Services</a></li>
+                    <li><a href="javascript:;">Gallery</a></li>
+                    <li><a href="javascript:;">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-12">
+                <ul class="social_media">
+                    <li>
+                        <a href="javascript:;"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer_copyright col-12">
+                <div class="year">© 2023 All rights reserved | LAND</div>
+                <div class="location">Lebanon ...</div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/21355c039c.js" crossorigin="anonymous"></script>
+<script src="./js/functions.js"></script>
 
 </html>
