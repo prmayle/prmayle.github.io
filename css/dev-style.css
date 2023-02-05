@@ -328,6 +328,154 @@ nav .menu_holder ul.menu_items li a:hover {
   border-radius: 25px;
 }
 
+.blog_section .blog_section_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.blog_section .blog_section_holder .two_block_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  color: white;
+}
+
+.blog_section .blog_section_holder .two_block_holder .left {
+  margin-right: 10px;
+}
+
+.blog_section .blog_section_holder .two_block_holder .right {
+  margin-left: 10px;
+}
+
+.blog_section .blog_section_holder .two_block_holder .left,
+.blog_section .blog_section_holder .two_block_holder .right {
+  height: 500px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog_section .blog_section_holder .many_blog_holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  color: white;
+  margin-left: 20px;
+}
+
+.blog_section .blog_section_holder .many_blog_holder .mini_blog_block {
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.blog_section .blog_section_holder .many_blog_holder .mini_blog_block.active {
+  border-left: 3px solid #BE9062;
+}
+
+.blog_section .blog_section_holder .many_blog_holder .mini_blog_block .main_title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.blog_section .blog_section_holder .many_blog_holder .mini_blog_block .main_description {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+
+.contact_us_section {
+  background-image: url("../images/contactusBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin-top: 100px;
+  padding: 200px 0px;
+  height: 350px;
+  position: relative;
+}
+
+.contact_us_section .contact_us_container {
+  color: white;
+  background-color: #1b2637;
+  padding: 50px;
+  border-radius: 20px;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+}
+
+.contact_us_section .contact_us_container .contact_title {
+  font-size: 30px;
+  line-height: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.contact_us_section .contact_us_container .contact_information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact_us_section .contact_us_container .contact_form input {
+  border: 1px solid white;
+  background: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.contact_us_section .contact_us_container .contact_form button {
+  border: 1px solid white;
+  background: white;
+  color: #BE9062;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
+}
+
+.contact_us_section .contact_us_container .contact_form button:hover {
+  color: white;
+  background: #BE9062;
+}
+
 footer {
   padding-top: 40px;
   background-color: #0f141d;

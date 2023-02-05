@@ -255,6 +255,117 @@ nav {
     }
 }
 
+.blog_section {
+    .blog_section_holder {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .two_block_holder {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            color: white;
+            .left {
+                margin-right: 10px;
+            }
+            .right {
+                margin-left: 10px;
+            }
+            .left,
+            .right {
+                height: 500px;
+                border-radius: 20px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+        .many_blog_holder {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            color: white;
+            margin-left: 20px;
+            .mini_blog_block {
+                margin-bottom: 20px;
+                padding-left: 10px;
+                &.active {
+                    border-left: 3px solid #BE9062;
+                }
+                .main_title {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 25px;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+                .main_description {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+}
+
+.contact_us_section {
+    background-image: url('../images/contactusBanner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 100px;
+    // margin-bottom: 150px;
+    padding: 200px 0px;
+    height: 350px;
+    position: relative;
+    .contact_us_container {
+        color: white;
+        background-color: #1b2637;
+        padding: 50px;
+        border-radius: 20px;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        .contact_title {
+            font-size: 30px;
+            line-height: 25px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .contact_information {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .contact_form {
+            input {
+                border: 1px solid white;
+                background: transparent;
+                border-radius: 10px;
+                padding: 10px;
+                color: white;
+            }
+            button {
+                border: 1px solid white;
+                background: white;
+                color: #BE9062;
+                border-radius: 10px;
+                padding: 10px;
+                transition: 0.4s all ease-in-out;
+                &:hover {
+                    color: white;
+                    background: #BE9062;
+                }
+            }
+        }
+    }
+}
+
 footer {
     // border: 1px solid #BE9062;
     // border-radius: 25px;
