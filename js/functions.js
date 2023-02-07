@@ -16,6 +16,18 @@ $(document).ready(function() {
             header.removeClass("darkHeader");
         }
     });
+
+
+    $('.menu').click(function() {
+        $('.overlay').toggleClass('anim');
+        $(this).addClass('open')
+    });
+
+    $('.open').click(function() {
+        $('.overlay').toggleClass('reverse-animation');
+    })
+
+
     AOS.init({
         // Global settings:
         disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function

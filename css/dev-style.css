@@ -129,7 +129,7 @@ nav .menu_holder ul.menu_items li a:hover {
 
 .main_section_banner .content_holder .main_title {
   color: #BE9062;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
   letter-spacing: 1px;
   line-height: 25px;
@@ -138,7 +138,7 @@ nav .menu_holder ul.menu_items li a:hover {
 
 .main_section_banner .content_holder .main_description {
   color: white;
-  font-size: 24px;
+  font-size: 17px;
   font-weight: 500;
   letter-spacing: .85px;
   line-height: 30px;
@@ -149,12 +149,13 @@ nav .menu_holder ul.menu_items li a:hover {
   text-decoration: none;
   display: block;
   text-align: center;
-  width: 200px;
-  height: 45px;
+  width: 160px;
+  height: 40px;
   background-color: white;
   border-radius: 20px;
   padding: 10px;
   color: #BE9062;
+  font-size: 15px;
 }
 
 .main_section_banner .content_holder .main_button:hover {
@@ -218,11 +219,12 @@ nav .menu_holder ul.menu_items li a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
+  padding-right: 20px;
 }
 
 .cards_section .swiper.firstSwiper .swiper-slide .content_swiper .left_side h1.title {
   color: #BE9062;
-  font-size: 35px;
+  font-size: 25px;
   line-height: 25px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -232,11 +234,15 @@ nav .menu_holder ul.menu_items li a:hover {
 
 .cards_section .swiper.firstSwiper .swiper-slide .content_swiper .left_side h6.description {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 1px;
   width: 500px;
+}
+
+.cards_section .swiper.firstSwiper .swiper-slide .content_swiper .right_side {
+  padding-left: 20px;
 }
 
 .cards_section .swiper.firstSwiper .swiper-slide .content_swiper .right_side img {
@@ -286,7 +292,7 @@ nav .menu_holder ul.menu_items li a:hover {
 
 .about_section .left h1.about_title {
   color: #BE9062;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 20px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -296,7 +302,7 @@ nav .menu_holder ul.menu_items li a:hover {
 
 .about_section .left h6.about_description {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 25px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -305,11 +311,11 @@ nav .menu_holder ul.menu_items li a:hover {
 .about_section .left a.about_button {
   background-color: #BE9062;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
   display: block;
-  width: 200px;
-  height: 50px;
+  width: 160px;
+  height: 40px;
   padding: 10px;
   border-radius: 30px;
 }
@@ -326,6 +332,11 @@ nav .menu_holder ul.menu_items li a:hover {
 
 .about_section .right img {
   border-radius: 25px;
+}
+
+.blog_section {
+  width: 100%;
+  overflow: hidden;
 }
 
 .blog_section .blog_section_holder {
@@ -347,6 +358,15 @@ nav .menu_holder ul.menu_items li a:hover {
           justify-content: space-between;
   width: 100%;
   color: white;
+}
+
+.blog_section .blog_section_holder .two_block_holder .main_title {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.blog_section .blog_section_holder .two_block_holder .main_description {
+  font-size: 15px;
 }
 
 .blog_section .blog_section_holder .two_block_holder .left {
@@ -437,7 +457,7 @@ nav .menu_holder ul.menu_items li a:hover {
 }
 
 .contact_us_section .contact_us_container .contact_title {
-  font-size: 30px;
+  font-size: 20px;
   line-height: 25px;
   font-weight: 600;
   margin-bottom: 30px;
@@ -451,13 +471,20 @@ nav .menu_holder ul.menu_items li a:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.contact_us_section .contact_us_container .contact_form .form_title {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
 }
 
 .contact_us_section .contact_us_container .contact_form input {
   border: 1px solid white;
   background: transparent;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
   color: white;
 }
 
@@ -466,7 +493,7 @@ nav .menu_holder ul.menu_items li a:hover {
   background: white;
   color: #BE9062;
   border-radius: 10px;
-  padding: 10px;
+  padding: 5px;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
 }
@@ -504,7 +531,7 @@ footer .site_map li {
 
 footer .site_map li a {
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   line-height: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -557,5 +584,6 @@ footer .footer_copyright {
   margin-top: 15px;
   padding-left: 0px;
   padding-right: 0px;
+  font-size: 15px;
 }
 /*# sourceMappingURL=dev-style.css.map */

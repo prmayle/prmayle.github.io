@@ -94,7 +94,7 @@ nav {
         width: 600px;
         .main_title {
             color: #BE9062;
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 800;
             letter-spacing: 1px;
             line-height: 25px;
@@ -102,7 +102,7 @@ nav {
         }
         .main_description {
             color: white;
-            font-size: 24px;
+            font-size: 17px;
             font-weight: 500;
             letter-spacing: .85px;
             line-height: 30px;
@@ -112,12 +112,13 @@ nav {
             text-decoration: none;
             display: block;
             text-align: center;
-            width: 200px;
-            height: 45px;
+            width: 160px;
+            height: 40px;
             background-color: white;
             border-radius: 20px;
             padding: 10px;
             color: #BE9062;
+            font-size: 15px;
             // transition: 0.8s all ease-in-out
             &:hover {
                 color: white;
@@ -158,9 +159,10 @@ nav {
                         align-items: left;
                         flex-direction: column;
                         text-align: left;
+                        padding-right: 20px;
                         h1.title {
                             color: #BE9062;
-                            font-size: 35px;
+                            font-size: 25px;
                             line-height: 25px;
                             letter-spacing: 1px;
                             margin-bottom: 30px;
@@ -169,7 +171,7 @@ nav {
                         }
                         h6.description {
                             color: white;
-                            font-size: 20px;
+                            font-size: 15px;
                             line-height: 30px;
                             font-weight: 300;
                             letter-spacing: 1px;
@@ -177,6 +179,7 @@ nav {
                         }
                     }
                     .right_side {
+                        padding-left: 20px;
                         img {
                             border-radius: 25px;
                         }
@@ -216,7 +219,7 @@ nav {
         padding-right: 30px;
         h1.about_title {
             color: #BE9062;
-            font-size: 30px;
+            font-size: 25px;
             line-height: 20px;
             letter-spacing: 1px;
             margin-bottom: 30px;
@@ -225,7 +228,7 @@ nav {
         }
         h6.about_description {
             color: white;
-            font-size: 20px;
+            font-size: 15px;
             line-height: 25px;
             letter-spacing: 1px;
             margin-bottom: 30px;
@@ -233,11 +236,11 @@ nav {
         a.about_button {
             background-color: #BE9062;
             color: white;
-            font-size: 18px;
+            font-size: 15px;
             text-align: center;
             display: block;
-            width: 200px;
-            height: 50px;
+            width: 160px;
+            height: 40px;
             padding: 10px;
             border-radius: 30px;
             &:hover {
@@ -256,6 +259,8 @@ nav {
 }
 
 .blog_section {
+    width: 100%;
+    overflow: hidden;
     .blog_section_holder {
         display: flex;
         justify-content: space-between;
@@ -265,6 +270,13 @@ nav {
             justify-content: space-between;
             width: 100%;
             color: white;
+            .main_title {
+                font-size: 25px;
+                font-weight: 700;
+            }
+            .main_description {
+                font-size: 15px;
+            }
             .left {
                 margin-right: 10px;
             }
@@ -332,7 +344,7 @@ nav {
         right: 10%;
         top: 10%;
         .contact_title {
-            font-size: 30px;
+            font-size: 20px;
             line-height: 25px;
             font-weight: 600;
             margin-bottom: 30px;
@@ -341,13 +353,19 @@ nav {
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
+            font-size: 15px;
         }
         .contact_form {
+            .form_title {
+                font-size: 20px;
+                line-height: 25px;
+                font-weight: 600;
+            }
             input {
                 border: 1px solid white;
                 background: transparent;
                 border-radius: 10px;
-                padding: 10px;
+                padding: 5px;
                 color: white;
             }
             button {
@@ -355,7 +373,7 @@ nav {
                 background: white;
                 color: #BE9062;
                 border-radius: 10px;
-                padding: 10px;
+                padding: 5px;
                 transition: 0.4s all ease-in-out;
                 &:hover {
                     color: white;
@@ -386,7 +404,7 @@ footer {
             margin-bottom: 10px;
             a {
                 color: white;
-                font-size: 20px;
+                font-size: 15px;
                 line-height: 20px;
                 letter-spacing: 1px;
                 text-transform: uppercase;
@@ -428,5 +446,6 @@ footer {
         margin-top: 15px;
         padding-left: 0px;
         padding-right: 0px;
+        font-size: 15px;
     }
 }
