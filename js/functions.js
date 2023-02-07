@@ -17,14 +17,15 @@ $(document).ready(function() {
         }
     });
 
-
-    $('.menu').click(function() {
-        $('.overlay').toggleClass('anim');
-        $(this).addClass('open')
-    });
-
-    $('.open').click(function() {
-        $('.overlay').toggleClass('reverse-animation');
+    $("#header-menu-link").on("click", function() {
+        $(this).toggleClass("active");
+        $("body").toggleClass("open");
+    })
+    $('.mini_blog_block').on("hover", function() {
+        $('.mini_blog_block').each(function() {
+            $(this).removeClass("active");
+        })
+        $(this).addClass("active");
     })
 
 
