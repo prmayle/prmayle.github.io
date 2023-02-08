@@ -20,13 +20,18 @@ $(document).ready(function() {
     $("#header-menu-link").on("click", function() {
         $(this).toggleClass("active");
         $("body").toggleClass("open");
+    });
+    $(".colse_btn").on("click", function() {
+        $("body").toggleClass("open");
+        $('#header-menu-link').toggleClass("active");
     })
-    $('.mini_blog_block').on("hover", function() {
+    $('.mini_blog_block').hover(function() {
         $('.mini_blog_block').each(function() {
             $(this).removeClass("active");
         })
         $(this).addClass("active");
-    })
+    });
+
 
 
     AOS.init({

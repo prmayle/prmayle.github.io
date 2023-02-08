@@ -20,7 +20,7 @@ body.open {
 }
 
 body.open .right_menu {
-  right: -100px;
+  right: -145px;
 }
 
 body.open .menu_holder {
@@ -45,11 +45,11 @@ main.now {
 }
 
 .perload {
-  width: 200px;
+  width: 240px;
   height: 140px;
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 7%;
+  left: 39%;
   z-index: 1000;
   visibility: visible;
   opacity: 1;
@@ -120,6 +120,19 @@ main.now {
   color: #BE9062;
 }
 
+.right_menu ul.menu_items li i {
+  font-size: 20px;
+  color: white;
+  margin-left: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+.right_menu ul.menu_items li i:hover {
+  color: #BE9062;
+}
+
 .right_menu .social_media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -132,7 +145,7 @@ main.now {
   list-style-type: none;
   padding-top: 30px;
   padding-left: 50px;
-  border-top: 1px solid white;
+  border-top: 1px solid #BE9062;
 }
 
 .right_menu .social_media li {
@@ -228,7 +241,7 @@ nav .menu_holder #header-menu-link {
   text-transform: uppercase;
   position: absolute;
   top: 50%;
-  right: 45px;
+  right: 0px;
   margin-top: -8px;
   text-decoration: none;
 }
@@ -246,7 +259,7 @@ nav .menu_holder #header-menu-link.active {
 }
 
 .main_section_banner {
-  background-image: url("../images/imagemainBanner.jpeg");
+  background-image: url("../images/bannernavywaves.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -429,6 +442,7 @@ nav .menu_holder #header-menu-link.active {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 50px 0px;
+  width: 100%;
 }
 
 .about_section .left {
@@ -482,7 +496,6 @@ nav .menu_holder #header-menu-link.active {
 .blog_section {
   width: 100%;
   overflow: hidden;
-  padding: 0px 20px;
 }
 
 .blog_section .blog_section_holder {
@@ -509,18 +522,12 @@ nav .menu_holder #header-menu-link.active {
 .blog_section .blog_section_holder .two_block_holder .main_title {
   font-size: 25px;
   font-weight: 700;
+  opacity: 0;
 }
 
 .blog_section .blog_section_holder .two_block_holder .main_description {
   font-size: 15px;
-}
-
-.blog_section .blog_section_holder .two_block_holder .left {
-  margin-right: 10px;
-}
-
-.blog_section .blog_section_holder .two_block_holder .right {
-  margin-left: 10px;
+  opacity: 0;
 }
 
 .blog_section .blog_section_holder .two_block_holder .left,
@@ -532,9 +539,9 @@ nav .menu_holder #header-menu-link.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -542,6 +549,58 @@ nav .menu_holder #header-menu-link.active {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.blog_section .blog_section_holder .two_block_holder .big_blog {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.blog_section .blog_section_holder .two_block_holder .big_blog:first-child {
+  margin-right: 10px;
+  margin-left: -10px;
+}
+
+.blog_section .blog_section_holder .two_block_holder .big_blog:nth-child(2) {
+  margin-left: 10px;
+  margin-right: -10px;
+}
+
+.blog_section .blog_section_holder .two_block_holder .big_blog .inside_blog {
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.blog_section .blog_section_holder .two_block_holder .big_blog .inside_blog .main_description,
+.blog_section .blog_section_holder .two_block_holder .big_blog .inside_blog .main_title {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 111;
+  opacity: 0;
+}
+
+.blog_section .blog_section_holder .two_block_holder .big_blog:hover .inside_blog {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+.blog_section .blog_section_holder .two_block_holder .big_blog:hover .inside_blog:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+}
+
+.blog_section .blog_section_holder .two_block_holder .big_blog:hover .inside_blog .main_description,
+.blog_section .blog_section_holder .two_block_holder .big_blog:hover .inside_blog .main_title {
+  opacity: 1;
 }
 
 .blog_section .blog_section_holder .many_blog_holder {
@@ -561,6 +620,13 @@ nav .menu_holder #header-menu-link.active {
 .blog_section .blog_section_holder .many_blog_holder .mini_blog_block {
   margin: 0px 10px 20px 30px;
   padding-left: 10px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition-property: border-left, transform, opacity, -webkit-transform;
+  -webkit-transition-duration: 0.3s, 1.3s, 1.3s, 1.3s;
+          transition-duration: 0.3s, 1.3s, 1.3s, 1.3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .blog_section .blog_section_holder .many_blog_holder .mini_blog_block.active {
@@ -619,7 +685,7 @@ nav .menu_holder #header-menu-link.active {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 20px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .contact_us_section .contact_us_container .contact_form .form_title {
@@ -657,7 +723,7 @@ footer {
 }
 
 footer .logo_holder {
-  width: 150px;
+  width: 120px;
   height: 70px;
 }
 
@@ -731,5 +797,101 @@ footer .footer_copyright {
   padding-left: 0px;
   padding-right: 0px;
   font-size: 15px;
+}
+
+@media only screen and (max-width: 676px) {
+  .content_swiper {
+    padding: 0px !important;
+  }
+  .content_swiper .left_side .title {
+    font-size: 18px !important;
+    margin-bottom: unset !important;
+  }
+  .content_swiper .left_side .description {
+    width: unset !important;
+    font-size: 13px !important;
+  }
+  .content_swiper .right_side {
+    height: unset !important;
+  }
+  .secondSwiper .swiper-slide {
+    width: 33% !important;
+  }
+  .about_section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .about_section .left {
+    padding-right: 0px;
+    margin-bottom: 30px;
+  }
+  .about_section .left h1.about_title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .about_section .left h6.about_description {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .about_section .left a.about_button {
+    font-size: 13px !important;
+    width: 130px !important;
+    height: 30px !important;
+    padding: 5px !important;
+  }
+  .about_section .right {
+    padding-left: 0px;
+  }
+  .about_section .right img {
+    width: 100%;
+    height: 100%;
+  }
+  .blog_section {
+    margin-top: 50px !important;
+  }
+  .blog_section .blog_section_holder {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .blog_section .blog_section_holder .two_block_holder {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .blog_section .blog_section_holder .two_block_holder .big_blog {
+    padding: 0px !important;
+  }
+  .blog_section .blog_section_holder .many_blog_holder {
+    margin-left: 0px !important;
+    margin-top: 40px !important;
+    padding-left: 0px !important;
+  }
+  .blog_section .blog_section_holder .many_blog_holder .mini_blog_block {
+    margin: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body.open .right_menu {
+    right: 90px !important;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  body #header-menu-link {
+    right: 25px !important;
+  }
+  body.open #header-menu-link {
+    right: 120px !important;
+  }
+  body.open .right_menu {
+    right: -120px !important;
+  }
 }
 /*# sourceMappingURL=dev-style.css.map */
