@@ -101,15 +101,15 @@ main.now {
 }
 
 .right_menu ul.menu_items li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .right_menu ul.menu_items li a {
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: .87px;
-  line-height: 15px;
+  line-height: 5px;
   text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: 0.3s all ease-in-out;
@@ -121,7 +121,7 @@ main.now {
 }
 
 .right_menu ul.menu_items li i {
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   margin-left: 50px;
   cursor: pointer;
@@ -204,8 +204,8 @@ nav .menu_holder.darkHeader {
 nav .menu_holder.darkHeader .logo_section {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  width: 120px;
-  height: 70px;
+  width: 90px;
+  height: 50px;
 }
 
 nav .menu_holder.darkHeader .logo_section img {
@@ -214,8 +214,8 @@ nav .menu_holder.darkHeader .logo_section img {
 }
 
 nav .menu_holder .logo_section {
-  width: 150px;
-  height: 90px;
+  width: 110px;
+  height: 60px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -244,6 +244,7 @@ nav .menu_holder #header-menu-link {
   right: 0px;
   margin-top: -8px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 nav .menu_holder #header-menu-link i {
@@ -259,7 +260,7 @@ nav .menu_holder #header-menu-link.active {
 }
 
 .main_section_banner {
-  background-image: url("../images/bannernavywaves.jpg");
+  background-image: url("../images/main_banner_final.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -272,19 +273,19 @@ nav .menu_holder #header-menu-link.active {
 
 .main_section_banner .content_holder .main_title {
   color: #BE9062;
-  font-size: 30px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: bold;
   letter-spacing: 1px;
-  line-height: 25px;
-  margin-bottom: 30px;
+  line-height: 50px;
+  margin-bottom: 40px;
 }
 
 .main_section_banner .content_holder .main_description {
   color: white;
-  font-size: 17px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: .85px;
-  line-height: 30px;
+  line-height: 20px;
   margin-bottom: 30px;
 }
 
@@ -295,10 +296,10 @@ nav .menu_holder #header-menu-link.active {
   width: 160px;
   height: 40px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px;
   color: #BE9062;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .main_section_banner .content_holder .main_button:hover {
@@ -376,13 +377,13 @@ nav .menu_holder #header-menu-link.active {
   line-height: 25px;
   letter-spacing: 1px;
   margin-bottom: 30px;
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .cards_section .swiper.firstSwiper .swiper-slide .content_swiper .left_side h6.description {
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 30px;
   font-weight: 300;
   letter-spacing: 1px;
@@ -461,7 +462,7 @@ nav .menu_holder #header-menu-link.active {
 
 .about_section .left h6.about_description {
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 25px;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -470,13 +471,13 @@ nav .menu_holder #header-menu-link.active {
 .about_section .left a.about_button {
   background-color: #BE9062;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   text-align: center;
   display: block;
   width: 160px;
   height: 40px;
   padding: 10px;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .about_section .left a.about_button:hover {
@@ -526,7 +527,7 @@ nav .menu_holder #header-menu-link.active {
 }
 
 .blog_section .blog_section_holder .two_block_holder .main_description {
-  font-size: 15px;
+  font-size: 14px;
   opacity: 0;
 }
 
@@ -558,6 +559,7 @@ nav .menu_holder #header-menu-link.active {
   width: 100%;
   height: 500px;
   border-radius: 20px;
+  padding: 0px !important;
 }
 
 .blog_section .blog_section_holder .two_block_holder .big_blog:first-child {
@@ -642,7 +644,7 @@ nav .menu_holder #header-menu-link.active {
 }
 
 .blog_section .blog_section_holder .many_blog_holder .mini_blog_block .main_description {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 1px;
@@ -722,9 +724,14 @@ footer {
   background-color: #0f141d;
 }
 
+footer .col-md-4 {
+  padding: 0px !important;
+  padding-left: 5px !important;
+}
+
 footer .logo_holder {
-  width: 120px;
-  height: 70px;
+  width: 90px;
+  height: 50px;
 }
 
 footer .logo_holder img {
@@ -738,12 +745,12 @@ footer .site_map {
 }
 
 footer .site_map li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 footer .site_map li a {
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 20px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -773,7 +780,7 @@ footer .social_media li {
 }
 
 footer .social_media li a i {
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   -webkit-transition: 0.4s all ease-in-out;
   transition: 0.4s all ease-in-out;
@@ -792,14 +799,48 @@ footer .footer_copyright {
           justify-content: space-between;
   color: white;
   border-top: 1px solid #BE9062;
-  padding-top: 15px;
-  margin-top: 15px;
+  padding-top: 10px;
+  margin-top: 10px;
   padding-left: 0px;
   padding-right: 0px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
-@media only screen and (max-width: 676px) {
+@media only screen and (max-width: 800px) {
+  .menu_holder {
+    padding: 10px 10px !important;
+  }
+  .right_menu ul {
+    padding-bottom: 10px !important;
+  }
+  .right_menu ul li {
+    margin-bottom: 5px !important;
+  }
+  .right_menu ul li a {
+    font-size: 12px !important;
+  }
+  .right_menu .social_media li {
+    padding-right: 20px !important;
+  }
+  .right_menu .social_media li a i {
+    font-size: 15px !important;
+  }
+  .main_section_banner .content_holder .main_title {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .main_section_banner .content_holder .main_description {
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .main_section_banner .content_holder a.main_button {
+    font-size: 12px;
+    width: 120px;
+    height: 30px;
+    padding: 6px;
+  }
   .content_swiper {
     padding: 0px !important;
   }
@@ -825,7 +866,8 @@ footer .footer_copyright {
     width: 100%;
   }
   .about_section .left {
-    padding-right: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
     margin-bottom: 30px;
   }
   .about_section .left h1.about_title {
@@ -843,7 +885,8 @@ footer .footer_copyright {
     padding: 5px !important;
   }
   .about_section .right {
-    padding-left: 0px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .about_section .right img {
     width: 100%;
@@ -880,6 +923,9 @@ footer .footer_copyright {
 @media only screen and (max-width: 576px) {
   body.open .right_menu {
     right: 90px !important;
+  }
+  .main_section_banner .content_holder .main_description {
+    word-wrap: break-word;
   }
 }
 
