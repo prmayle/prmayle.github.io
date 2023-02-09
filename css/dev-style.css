@@ -195,7 +195,7 @@ nav .menu_holder {
 }
 
 nav .menu_holder.darkHeader {
-  background-color: red;
+  background-color: #1b2637;
   padding: 10px 15px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
