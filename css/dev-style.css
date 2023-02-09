@@ -187,7 +187,7 @@ nav .menu_holder {
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  padding: 20px 0px;
+  padding: 20px 15px;
   background-color: transparent;
   left: 0;
   -webkit-transition: 0.3s all ease-in-out;
@@ -196,9 +196,11 @@ nav .menu_holder {
 
 nav .menu_holder.darkHeader {
   background-color: #1b2637;
-  padding: 10px 0px;
+  padding: 10px 15px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 nav .menu_holder.darkHeader .logo_section {
@@ -791,6 +793,7 @@ footer .social_media li a:hover i {
 }
 
 footer .footer_copyright {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
