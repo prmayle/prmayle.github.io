@@ -199,8 +199,7 @@ nav .menu_holder.darkHeader {
   padding: 10px 15px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
 }
 
 nav .menu_holder.darkHeader .logo_section {
