@@ -163,7 +163,7 @@ main.now {
   color: #BE9062;
 }
 
-nav {
+header {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -174,7 +174,26 @@ nav {
   z-index: 99;
 }
 
-nav .menu_holder {
+header.darkHeader {
+  background-color: #1b2637;
+  padding: 10px 15px;
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+
+header.darkHeader .logo_section {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  width: 90px;
+  height: 50px;
+}
+
+header.darkHeader .logo_section img {
+  width: 100%;
+  height: 100%;
+}
+
+header .menu_holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,41 +213,40 @@ nav .menu_holder {
   transition: 0.3s all ease-in-out;
 }
 
-nav .menu_holder.darkHeader {
+header .menu_holder.darkHeader {
   background-color: #1b2637;
   padding: 10px 15px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  position: fixed;
 }
 
-nav .menu_holder.darkHeader .logo_section {
+header .menu_holder.darkHeader .logo_section {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   width: 90px;
   height: 50px;
 }
 
-nav .menu_holder.darkHeader .logo_section img {
+header .menu_holder.darkHeader .logo_section img {
   width: 100%;
   height: 100%;
 }
 
-nav .menu_holder .logo_section {
+header .menu_holder .logo_section {
   width: 110px;
   height: 60px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
-nav .menu_holder .logo_section img {
+header .menu_holder .logo_section img {
   -webkit-transition: left 0.2s ease, right 0.2s ease;
   transition: left 0.2s ease, right 0.2s ease;
   width: 100%;
   height: 100%;
 }
 
-nav .menu_holder #header-menu-link {
+header .menu_holder #header-menu-link {
   -webkit-transition-property: opacity, right;
   transition-property: opacity, right;
   -webkit-transition-duration: 0.3s, 0.2s;
@@ -248,15 +266,15 @@ nav .menu_holder #header-menu-link {
   font-size: 14px;
 }
 
-nav .menu_holder #header-menu-link i {
+header .menu_holder #header-menu-link i {
   padding-left: 20px;
 }
 
-nav .menu_holder #header-menu-link:hover {
+header .menu_holder #header-menu-link:hover {
   opacity: 1;
 }
 
-nav .menu_holder #header-menu-link.active {
+header .menu_holder #header-menu-link.active {
   opacity: 1;
 }
 
@@ -923,23 +941,17 @@ footer .footer_copyright {
 }
 
 @media only screen and (max-width: 576px) {
-  body.open .right_menu {
-    right: 90px !important;
-  }
   .main_section_banner .content_holder .main_description {
     word-wrap: break-word;
   }
 }
 
 @media only screen and (max-width: 476px) {
-  body #header-menu-link {
-    right: 25px !important;
-  }
   body.open #header-menu-link {
-    right: 120px !important;
+    right: 80px !important;
   }
   body.open .right_menu {
-    right: -120px !important;
+    right: -140px !important;
   }
 }
 /*# sourceMappingURL=dev-style.css.map */
