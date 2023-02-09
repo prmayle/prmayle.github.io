@@ -50,6 +50,7 @@ main {
     &.remove {
         opacity: 0;
         visibility: hidden;
+        // display: none;
     }
     img {
         width: 100%;
@@ -58,6 +59,8 @@ main {
 }
 
 .right_menu {
+    // overflow: hidden;
+    // display: none;
     width: 320px;
     height: 100%;
     position: fixed;
