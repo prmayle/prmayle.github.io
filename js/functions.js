@@ -6,7 +6,7 @@ $(document).ready(function() {
     }, 1000);
     $('.perload').addClass("remove");
     //On scroll change header background 
-    var header = $("header");
+    var header = $("nav");
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 

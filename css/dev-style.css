@@ -163,8 +163,8 @@ main.now {
   color: #BE9062;
 }
 
-header {
-  position: fixed;
+nav {
+  position: static;
   top: 0;
   bottom: 0;
   width: 100%;
@@ -174,26 +174,7 @@ header {
   z-index: 99;
 }
 
-header.darkHeader {
-  background-color: #1b2637;
-  padding: 10px 15px;
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
-}
-
-header.darkHeader .logo_section {
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
-  width: 90px;
-  height: 50px;
-}
-
-header.darkHeader .logo_section img {
-  width: 100%;
-  height: 100%;
-}
-
-header .menu_holder {
+nav .menu_holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,40 +194,42 @@ header .menu_holder {
   transition: 0.3s all ease-in-out;
 }
 
-header .menu_holder.darkHeader {
+nav .menu_holder.darkHeader {
   background-color: #1b2637;
   padding: 10px 15px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
-header .menu_holder.darkHeader .logo_section {
+nav .menu_holder.darkHeader .logo_section {
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
   width: 90px;
   height: 50px;
 }
 
-header .menu_holder.darkHeader .logo_section img {
+nav .menu_holder.darkHeader .logo_section img {
   width: 100%;
   height: 100%;
 }
 
-header .menu_holder .logo_section {
+nav .menu_holder .logo_section {
   width: 110px;
   height: 60px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
 
-header .menu_holder .logo_section img {
+nav .menu_holder .logo_section img {
   -webkit-transition: left 0.2s ease, right 0.2s ease;
   transition: left 0.2s ease, right 0.2s ease;
   width: 100%;
   height: 100%;
 }
 
-header .menu_holder #header-menu-link {
+nav .menu_holder #header-menu-link {
   -webkit-transition-property: opacity, right;
   transition-property: opacity, right;
   -webkit-transition-duration: 0.3s, 0.2s;
@@ -266,15 +249,15 @@ header .menu_holder #header-menu-link {
   font-size: 14px;
 }
 
-header .menu_holder #header-menu-link i {
+nav .menu_holder #header-menu-link i {
   padding-left: 20px;
 }
 
-header .menu_holder #header-menu-link:hover {
+nav .menu_holder #header-menu-link:hover {
   opacity: 1;
 }
 
-header .menu_holder #header-menu-link.active {
+nav .menu_holder #header-menu-link.active {
   opacity: 1;
 }
 
@@ -913,7 +896,7 @@ footer .footer_copyright {
     height: 100%;
   }
   .blog_section {
-    margin-top: 50px !important;
+    margin-top: 20px !important;
   }
   .blog_section .blog_section_holder {
     -webkit-box-orient: vertical !important;
@@ -922,21 +905,63 @@ footer .footer_copyright {
             flex-direction: column !important;
   }
   .blog_section .blog_section_holder .two_block_holder {
-    -webkit-box-orient: horizontal !important;
+    -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
   .blog_section .blog_section_holder .two_block_holder .big_blog {
-    padding: 0px !important;
+    padding: 0px 0px !important;
+    margin: 0px !important;
+    height: 300px !important;
+    margin-bottom: 20px !important;
+  }
+  .blog_section .blog_section_holder .two_block_holder .big_blog .inside_blog {
+    background-size: cover !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  .blog_section .blog_section_holder .two_block_holder .big_blog .inside_blog .main_title,
+  .blog_section .blog_section_holder .two_block_holder .big_blog .inside_blog .main_description {
+    opacity: 1;
+    visibility: visible;
+  }
+  .blog_section .blog_section_holder .two_block_holder .big_blog .inside_blog:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.418);
   }
   .blog_section .blog_section_holder .many_blog_holder {
     margin-left: 0px !important;
-    margin-top: 40px !important;
-    padding-left: 0px !important;
+    margin-top: 20px !important;
   }
   .blog_section .blog_section_holder .many_blog_holder .mini_blog_block {
     margin: 0px !important;
+    margin: 10px 0px !important;
+  }
+  .blog_section .blog_section_holder .many_blog_holder .mini_blog_block .main_title {
+    font-size: 18px !important;
+    margin-bottom: 5px !important;
+  }
+  .blog_section .blog_section_holder .many_blog_holder .mini_blog_block .main_description {
+    font-size: 12px !important;
+    margin-bottom: 0px !important;
+  }
+  .contact_us_section .contact_us_container .contact_title {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .contact_us_section .contact_us_container .contact_information {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact_us_section .contact_us_container .contact_information div:first-child {
+    margin-bottom: 10px;
   }
 }
 
@@ -952,6 +977,24 @@ footer .footer_copyright {
   }
   body.open .right_menu {
     right: -140px !important;
+  }
+}
+
+@media only screen and (max-width: 476px) {
+  .contact_us_section {
+    margin-top: 50px;
+  }
+  .contact_us_section .contact_us_container {
+    padding: 30px;
+    top: 5%;
+  }
+  .contact_us_section .contact_us_container .contact_form input {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .contact_us_section .contact_us_container .contact_form button {
+    font-size: 13px;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=dev-style.css.map */
