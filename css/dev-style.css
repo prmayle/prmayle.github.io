@@ -848,6 +848,9 @@ footer .footer_copyright {
     height: 30px;
     padding: 6px;
   }
+  .cards_section {
+    padding-bottom: 0px !important;
+  }
   .content_swiper {
     padding: 0px !important;
   }
