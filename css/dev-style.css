@@ -20,7 +20,7 @@ body.open {
 }
 
 body.open .right_menu {
-  right: -145px;
+  right: -140px;
 }
 
 body.open .menu_holder {
@@ -187,11 +187,18 @@ nav .menu_holder {
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
-  padding: 20px 15px;
+  padding: 10px 0px;
   background-color: transparent;
   left: 0;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
+}
+
+nav .menu_holder.main_menu {
+  position: fixed !important;
+  z-index: 9000000;
+  top: 0;
+  left: 0;
 }
 
 nav .menu_holder.darkHeader {
@@ -199,8 +206,6 @@ nav .menu_holder.darkHeader {
   padding: 10px 15px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
-  position: -webkit-sticky;
-  position: sticky;
 }
 
 nav .menu_holder.darkHeader .logo_section {
@@ -815,7 +820,10 @@ footer .footer_copyright {
 
 @media only screen and (max-width: 800px) {
   .menu_holder {
-    padding: 10px 10px !important;
+    padding: 10px 0px !important;
+  }
+  .menu_holder.main_menu {
+    padding: 0px 15px !important;
   }
   .right_menu ul {
     padding-bottom: 10px !important;
@@ -970,6 +978,12 @@ footer .footer_copyright {
   .contact_us_section .contact_us_container .contact_information div:first-child {
     margin-bottom: 10px;
   }
+  footer .col-md-4 {
+    padding: 0px 15px !important;
+  }
+  footer .footer_copyright {
+    padding: 10px 15px !important;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -993,7 +1007,7 @@ footer .footer_copyright {
 
 @media only screen and (max-width: 476px) {
   body.open #header-menu-link {
-    right: 80px !important;
+    right: 170px !important;
   }
   body.open .right_menu {
     right: -140px !important;

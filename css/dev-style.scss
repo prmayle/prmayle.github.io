@@ -15,7 +15,7 @@ body {
     &.open {
         left: -100px;
         .right_menu {
-            right: -145px;
+            right: -140px;
         }
         .menu_holder {
             left: -100px;
@@ -147,16 +147,22 @@ nav {
         position: sticky;
         // padding: 0px 15px;
         // transition: 0.3s all ease-in-out;
-        padding: 20px 15px;
+        padding: 10px 0px;
         background-color: transparent;
         left: 0;
         // transition: left 0.2s ease, right 0.2s ease;
         transition: 0.3s all ease-in-out;
+        &.main_menu {
+            position: fixed !important;
+            z-index: 9000000;
+            top: 0;
+            left: 0;
+        }
         &.darkHeader {
             background-color: #1b2637;
             padding: 10px 15px;
             transition: 0.3s all ease-in-out;
-            position: sticky;
+            // position: sticky;
             .logo_section {
                 transition: 0.3s all ease-in-out;
                 width: 90px;
@@ -651,7 +657,10 @@ footer {
 
 @media only screen and (max-width: 800px) {
     .menu_holder {
-        padding: 10px 10px !important;
+        padding: 10px 0px !important;
+        &.main_menu {
+            padding: 0px 15px !important;
+        }
     }
     .right_menu {
         ul {
@@ -816,6 +825,14 @@ footer {
             }
         }
     }
+    footer {
+        .col-md-4 {
+            padding: 0px 15px !important;
+        }
+        .footer_copyright {
+            padding: 10px 15px !important;
+        }
+    }
 }
 
 @media only screen and (max-width: 576px) {
@@ -859,7 +876,7 @@ footer {
         // }
         &.open {
             #header-menu-link {
-                right: 80px !important;
+                right: 170px !important;
             }
             .right_menu {
                 right: -140px !important;
