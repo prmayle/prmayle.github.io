@@ -656,10 +656,18 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
+    nav {
+        .menu_holder {
+            .logo_section {
+                width: 90px;
+                height: 50px;
+            }
+        }
+    }
     .menu_holder {
         padding: 10px 0px !important;
         &.main_menu {
-            padding: 0px 15px !important;
+            padding: 10px 15px !important;
         }
     }
     .right_menu {
