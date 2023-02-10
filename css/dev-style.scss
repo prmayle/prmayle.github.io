@@ -655,7 +655,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 767px) {
     .menu_holder {
         padding: 10px 0px !important;
         &.main_menu {
@@ -765,7 +765,7 @@ footer {
     .blog_section {
         margin-top: 20px !important;
         .blog_section_holder {
-            flex-direction: column !important;
+            flex-direction: column-reverse !important;
             .two_block_holder {
                 flex-direction: column !important;
                 .big_blog {
@@ -876,7 +876,7 @@ footer {
         // }
         &.open {
             #header-menu-link {
-                right: 170px !important;
+                right: 90px !important;
             }
             .right_menu {
                 right: -140px !important;
@@ -905,5 +905,12 @@ footer {
                 }
             }
         }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .col-md-6,
+    .col-lg-6 {
+        padding: 0px;
     }
 }
