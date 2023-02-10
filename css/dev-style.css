@@ -973,6 +973,19 @@ footer .footer_copyright {
   .main_section_banner .content_holder .main_description {
     word-wrap: break-word;
   }
+  .cards_section .swiper.firstSwiper .swiper-slide .content_swiper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .cards_section .swiper.firstSwiper .swiper-slide .content_swiper .left_side {
+    padding: 0px 15px;
+    margin-top: 15px;
+  }
+  .cards_section .swiper.firstSwiper .swiper-slide .content_swiper .right_side {
+    padding: 0px 15px;
+  }
 }
 
 @media only screen and (max-width: 476px) {
@@ -981,6 +994,9 @@ footer .footer_copyright {
   }
   body.open .right_menu {
     right: -140px !important;
+  }
+  .perload {
+    left: 18% !important;
   }
 }
 

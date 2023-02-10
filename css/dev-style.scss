@@ -831,6 +831,22 @@ footer {
             }
         }
     }
+    .cards_section {
+        .swiper.firstSwiper {
+            .swiper-slide {
+                .content_swiper {
+                    flex-direction: column-reverse;
+                    .left_side {
+                        padding: 0px 15px;
+                        margin-top: 15px;
+                    }
+                    .right_side {
+                        padding: 0px 15px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 476px) {
@@ -846,6 +862,9 @@ footer {
                 right: -140px !important;
             }
         }
+    }
+    .perload {
+        left: 18% !important;
     }
 }
 
