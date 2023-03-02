@@ -190,6 +190,7 @@ nav {
   height: -moz-fit-content;
   height: fit-content;
   z-index: 99;
+  height: 100px;
 }
 
 nav .menu_holder {
@@ -206,7 +207,7 @@ nav .menu_holder {
   position: -webkit-sticky;
   position: sticky;
   padding: 10px 0px;
-  background-color: transparent;
+  background-color: #1b2637;
   left: 0;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -285,12 +286,17 @@ nav .menu_holder #header-menu-link.active {
 }
 
 .main_section_banner {
-  background-image: url("../images/bannerMainNew(2).jpeg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  padding: 260px 0px;
+  background-image: url("../images/newBannerNewSize.jpeg");
+  background-size: contain;
+  width: 100%;
+  padding: 320px 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main_section_banner {
+    padding: 100px 0px;
+    background-repeat: no-repeat;
+  }
 }
 
 .main_section_banner .content_holder {
@@ -881,6 +887,7 @@ footer .footer_copyright {
   }
   .cards_section {
     padding-bottom: 0px !important;
+    padding-top: 0px !important;
   }
   .content_swiper {
     padding: 0px !important;
