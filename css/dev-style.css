@@ -24,7 +24,7 @@
 }
 
 body {
-  background-color: #1b2637;
+  background-color: black;
   font-family: 'Roboto regular', sans-serif;
   overflow-x: hidden;
   position: relative;
@@ -90,7 +90,7 @@ main.now {
   height: 100%;
   position: fixed;
   top: 0;
-  background: #1b2637;
+  background-color: black;
   z-index: 10004;
   right: -320px;
   -webkit-transition: left 0.2s ease, right 0.2s ease;
@@ -207,7 +207,7 @@ nav .menu_holder {
   position: -webkit-sticky;
   position: sticky;
   padding: 10px 0px;
-  background-color: #1b2637;
+  background-color: black;
   left: 0;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -221,7 +221,7 @@ nav .menu_holder.main_menu {
 }
 
 nav .menu_holder.darkHeader {
-  background-color: #1b2637;
+  background-color: black;
   padding: 10px 15px;
   -webkit-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
@@ -700,7 +700,7 @@ nav .menu_holder #header-menu-link.active {
 
 .contact_us_section .contact_us_container {
   color: white;
-  background-color: #1b2637;
+  background-color: black;
   padding: 50px;
   border-radius: 20px;
   position: absolute;
@@ -757,7 +757,7 @@ nav .menu_holder #header-menu-link.active {
 
 footer {
   padding-top: 40px;
-  background-color: #0f141d;
+  background-color: black;
 }
 
 footer .col-md-4 {
